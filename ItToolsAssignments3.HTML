@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<!-- Assignment no. 3   18-12-20 -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script type="text/javascript">$(document).ready(function () {
+        $("#btn1").click(function () {
+            $("form").hide(
+                function () {
+                    $("div").css("background-color:red");
+
+                }
+            );
+        });
+        $("#btn2").click(function () {
+            $("form").show(
+                function () {
+                    $("div").css("background-color:red");
+
+                }
+            );
+        });
+    });
+</script>
+<body>
+    <center>
+        <button id="btn1" style="border-radius: 10px;">hide</button><br /><br />
+        <button id="btn2" style="border-radius: 10px;">show</button><br /><br />
+        <div style="border-style:groove;border-radius:10px ;border-width: 100px; background-color: rgba(157, 88, 214, 0.842);"> 
+        <h1 style="color:blueviolet;border-radius: 20px;"> Registration Form </h1>
+            <form>
+                <br />
+                <input type="text" placeholder="Enter First Name " required /><br /><br />
+                <input type="text" placeholder="Enter Last Name " required /><br /><br />
+                <input type="text" placeholder="Enter Your Username  " required /><br /><br />
+                <input type="password" placeholder="Enter Password" required /><br /><br />
+                <input id="contact_no" type="text" placeholder="Enter Contact Number " required /><br /><span
+                    class></span>
+                <br /><br />
+                <input type="email" placeholder="Enter Your Email ID " required /><br /><br />
+                <label for="">Address</label><br /><br />
+                <textarea style="border-radius: 5px;" required></textarea><br /><br />
+                <button>Submit</button>
+            </form>
+        </div>
+    </center>
+
+</body>
+
+</html>

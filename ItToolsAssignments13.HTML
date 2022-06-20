@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Aim :- Design a webpage to demonstrate delay effect 
+Assignment number - 13
+     Date :- 20-02-2021
+-->
+<head>
+    <title>Delay </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(() => {
+            $("button").click(() => {
+                $("img").delay(1000).fadeOut(2000);
+            });
+        });
+
+    </script>
+</head>
+
+<body>
+    <img src="abstract-classic-blue-background-design_23-2148437740.jpg">
+    <button> Make it Delay </button>
+</body>
+
+</html>

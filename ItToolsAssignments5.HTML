@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!-- Aim :- Design a web page and implement drag and drop.
+     date : - 26 / 12 / 2020
+     submission time :- 1/1/2021 2:00 PM  -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="http://ajax.googleapis.com/ajax/ libs/jquery/2.1.3/jquery.min.js"></script>
+        <script type="text/javascript">
+		function allowDrop(ev) {
+			ev.preventDefault();
+		}
+		function drag(ev) {
+            ev.dataTransfer.setData("text",ev.target.id);   
+		}
+		function drop(ev) {
+			ev.preventDefault();
+			var object = ev.dataTransfer.getData("text");
+            ev.target.appendChild(document.getElementById(object));
+           $(document).ready(function(){
+            $("h4").fadeOut(1000); 
+
+           });
+               }
+    </script>
+    <style>
+        img{
+            height: 250px;
+            width: 300px;
+            border-radius: 30px;
+        }
+        .div2{
+            height: 400px;
+            width: 350px;
+            border-radius: 30px;
+            border-style: dotted;
+            background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <div>
+        <img id="img1" src="abstract-classic-blue-background-design_23-2148437740.jpg" draggable="true"  ondragstart="drag(event)">
+    </div>
+    <div class="div2" ondragover="allowDrop(event)" ondrop="drop(event)">
+        <h4>Drag your image Here</h4>  
+    </div>  
+    <h3></h3> 
+</center>
+</body>
+</html>

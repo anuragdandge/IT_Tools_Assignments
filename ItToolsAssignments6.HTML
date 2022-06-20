@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script type="text/javascript">
+     $(document).ready(function(){
+       $("#SlideUp").click(function(){
+           $("form").slideUp(2000);
+       });
+       $("#SlideDown").click(function(){
+           $("form").slideDown(2000);
+       });
+     });
+    </script>
+</head>
+<body>
+    <div>
+        <button id="SlideUp">Slide Up</button><br/><br/>
+        <button id="SlideDown">Slide Down</button><br/><br/>
+       <form><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum sunt possimus necessitatibus ullam? Id, molestias, autem, eos vitae magnam enim corporis eveniet maxime saepe dolore deserunt numquam. Beatae, quo ut.</p>
+       </form> </div>
+</body>
+</html>

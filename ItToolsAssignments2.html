@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Assignment no.2  11-12-20 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+    body{
+        background-color: cornflowerblue;
+        /*background-image: url("61596f6ed6b65a2.jpg_wh860.jpg");*/
+        padding-left: 30%;
+    }
+     div{
+         border-style: groove;
+         border-color: rgb(255, 255, 255);
+         align-content: center;
+         background-color: rgb(184, 146, 219);
+         /*background-image: url("abstract-classic-blue-background-design_23-2148437740.jpg");*/
+         height: 500px;
+         width: 400px;
+         border-radius: 20px 0 20px 50px; 
+     }
+     h1{
+         color: aliceblue;
+         background-color: rgba(77, 141, 224, 0.377);
+         border-radius: 10px;
+     }
+     input{
+         height: 20px;
+         width: 200px;
+         border-radius: 20px 0 20px 30px; 
+     }
+     label{
+         color: white;
+     }
+     button{
+         color: blueviolet;
+         border-radius: 30px;
+
+     }
+    </style>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>  
+    <script type="text/javascript">
+        $(document).ready(function(){
+            var num ;
+            $("button").click(function(){
+                num=document.getElementById('contact_no').value;
+                if(isNaN(num))
+                {
+                 $("span").text("Please Enter A Valid Mobile Number !!!");
+                // alert("Please Enter A Valid Mobile Number !!!");
+                }
+                if(num > 10){
+                    $("span").text("Contact Number Should Contain Only 10 Character! ");
+                  // alert("Contact Number Should Contain Only 10 Character!");
+                }
+            });
+                     
+        });
+
+    </script>
+</head>
+<body >
+    <div >
+        <center>
+    <h1>Registrtion Page</h1>
+    <form>
+        <input type="text" placeholder="Enter First Name " required/><br/><br/>
+        <input type="text" placeholder="Enter Last Name " required/><br/><br/>
+        <input type="text" placeholder="Enter Your Username  " required/><br/><br/>
+        <input type="password" placeholder="Enter Password" required/><br/><br/>
+        <input id="contact_no" type="text" placeholder="Enter Contact Number " required/><br/><span class></span>
+        <br/><br/>
+        <input type="email" placeholder="Enter Your Email ID " required/><br/><br/>
+        <label for="">Address</label><br/><br/>
+        <textarea style="border-radius: 5px;"required></textarea><br/><br/>
+        <button >Submit</button>
+
+    </form>
+</center>
+</div>
+    
+</body>
+</html>

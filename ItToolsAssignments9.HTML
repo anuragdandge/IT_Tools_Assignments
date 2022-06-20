@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!-- 
+  Assignment :- 9
+  Aim :- Design a HTML web page and execute change event using Jquery 
+  Date :-  22/01/2021 
+-->
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("select").change(function(){
+    var color=document.getElementById("col").value;
+    $(".main ").css(
+      "background-color",color
+  );
+  });
+});
+</script>
+<style>
+  .main{
+    height: 400px;
+    width: 500px;
+    border-width: 2px;
+    border-radius: 10px;
+    border-style: solid;
+  }
+</style>
+</head>
+<body>
+
+<center>
+  <div class="main">
+    
+  </div>
+  <select id="col">
+    <option value="voilet"> Voilet</option>
+    <option value="blue"> Blue</option>
+    <option value="red"> red</option>
+    <option value="green"> Green </option>
+    <option value="indigo"> Indigo</option>
+
+  </select>
+</center>
+
+
+</body>
+</html>

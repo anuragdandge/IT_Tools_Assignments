@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- https://codepen.io/pen/ -->
+<!-- 
+    Assignment No. -  7 
+    Aim - Animate  Effect
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animate Effect </title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#circle").click(function () {
+                $("div").animate({
+                    borderRadius: '100px'
+                })
+            });
+            $("#sqcircle").click(function () {
+                $("img").animate({
+                  borderRadius : '70px',
+                })
+            });
+            $("#teardrop").click(function () {
+                $("img").animate({
+                    borderTopLeftRadius: '100px',
+                    borderTopRightRadius: '100px',
+                    borderBottomRightRadius: '20px',
+                    borderBottomLeftRadius: '100px',
+                })
+            });
+            $("#leaf").click(function () {
+                $("img").animate({
+                    borderTopLeftRadius: '100px',
+                    borderTopRightRadius: '0px',
+                    borderBottomRightRadius: '100px',
+                    borderBottomLeftRadius: '0px',
+                })
+            });
+            $("#diamond").click(function () {
+                $("img").animate({
+                    paddingLeft: '20px',
+                    marginLeft: '-20px',
+                    paddingTop: '50px',
+                    marginTop: '-50px',
+                    paddingRight: '20px',
+                    marginRight: '-20px',
+                    height: '200px',
+                    transform: 'rotate(-10deg)'
+
+            })
+        });
+
+        });
+
+    </script>
+    <style>
+        body {
+            background-color: cornflowerblue;
+        }
+
+        img {
+            margin-top: 20px;
+            height: 200px;
+            width: 200px;
+            border-color: blueviolet;
+            border-style: double;
+        }
+
+        #sqcircle {
+            border-radius: 10px;
+            height: 65px;
+
+        }
+
+        #circle {
+            border-radius: 50px;
+            height: 65px;
+            width: 65px;
+
+        }
+
+        #teardrop {
+            border-radius: 40px 40px 5px 40px;
+            height: 65px;
+
+
+        }
+
+        #leaf {
+            border-radius: 40px 0px 40px 0px;
+            height: 65px;
+            width: 65px;
+        }
+
+        .image {
+            background-color: aliceblue;
+            border-width: 10px;
+            border-style: groove;
+            border-color: black;
+            border-radius: 30px;
+            border-right-color: aqua;
+            border-left-color: aqua;
+
+        }
+
+        .btns {
+            padding: 20px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="image">
+        <center>
+            <img src="abstract-classic-blue-background-design_23-2148437740.jpg" />
+        </center><br /><br />
+    </div>
+    <div class="btns">
+        <center>
+            <button id="circle">Circle</button>
+            <button id="sqcircle">SqCircle</button>
+            <button id="teardrop">Teardrop</button>
+            <button id="leaf">leaf</button>
+            <!-- <button id="diamond">Diamond</button> -->
+        </center>
+    </div>
+
+
+</body>
+
+</html>

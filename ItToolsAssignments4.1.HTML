@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script type="text/javascript">$(document).ready(function () {
+        $("#btn1").click(function () {
+            $("H1").fadeOut(2000);
+        });
+        $("#btn2").click(function () {
+            $("H1").fadeIn(2000);       
+        });
+    });
+</script>
+<body>
+    <center>
+        <button id="btn1" style="border-radius: 10px;">Fade Out </button><br /><br />
+        <button id="btn2" style="border-radius: 10px;">Fade In</button><br /><br />
+
+        <div style="border-style:groove;border-radius:10px ;"> 
+         <H1 style="color:rgb(59, 94, 82)">Hi... This is Practical of jQuery</H1>
+        </div>
+    </center>
+
+</body>
+
+</html>
